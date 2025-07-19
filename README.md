@@ -4,9 +4,9 @@
 
 ## Introduction
 
-The Chocolate Sales 2022 Dashboard provides a clear and insightful overview of sales performance throughout the year, helping businesses quickly identify trends, peak sales periods, and underperforming months.
+The `Chocolate Sales 2022 Dashboard` provides a clear and insightful overview of sales performance throughout the year, helping businesses quickly identify trends, peak sales periods, and underperforming months.
 
- The data contains detailed information on the Sales Person, Product Name, Sales Region, Boxes Shipped, and Revenue/Amount that are presented here.
+The data contains detailed information on the Sales Person, Product Name, Sales Region, Boxes Shipped, and Revenue/Amount that are presented here.
 
 ### Dashboard File
 My final dashboard is in [Chocolate_sales.xlsx](Chocolate_sales.xlsx) .
@@ -35,7 +35,7 @@ The following Excel skills were utilized for analysis:
 
 <img src="images/Power_query.png" width="70%" height="auto">
 
-- **Usage:** (ETL) Utilized power query to extract csv file from kaggle, then transform data by adding month column, and lastly load data into excel. Also check if there is duplicate datas for data cleaning purpose.
+- **Usage:** `(ETL)` Utilized power query to extract csv file from kaggle, then transform data by adding month column, and lastly load data into excel. Also check if there is duplicate datas for data cleaning purpose.
 
 ## Dashboard Build
 
@@ -102,7 +102,7 @@ The following Excel skills were utilized for analysis:
 =SUM(IF((Chocolate_Sales[Country]=country)*(Chocolate_Sales[Product]=product)*(Chocolate_Sales[Month]=month),Chocolate_Sales[Amount]))
 ```
 
-- **Multi-Criteria Filtering:** Returns the sum of amount depending on the validation of product, country, and month.
+- **Multi-Criteria Filtering:** Returns the sum of amount depending on the validation of `Product`, `Country`, and `Month`.
 - **Formula Purpose:** This formula calculates the sum of amount depending on validation. Also serves as one of the KPI.
 
 #### Background Table & KPI Implementation
@@ -113,7 +113,7 @@ The following Excel skills were utilized for analysis:
 
 #### KPI#2 Top country by median sales
 
-- **Formula:** The formula used in this KPI is the same formula used in calculating the median amount of country. Returns the country with highest median amount that Depends on validation of product and month.
+- **Formula:** The formula used in this KPI is the same formula used in calculating the median amount of country. Returns the country with highest median amount that Depends on validation of `Product` and `Month`.
 - **Purpose:** To determine which country has the highest Revenue.
 
 #### Background Table & KPI Implementation
@@ -128,7 +128,7 @@ The following Excel skills were utilized for analysis:
 =SUM(IF((Chocolate_Sales[Country]=country)*(Chocolate_Sales[Boxes Shipped]<>0)*(Chocolate_Sales[Product]=product)*(Chocolate_Sales[Month]=month),Chocolate_Sales[Boxes Shipped]))
 ```
 
-- **Multi-Criteria Filtering:** Returns the sum of boxes shipped depending on the validation of product, country, and month.
+- **Multi-Criteria Filtering:** Returns the sum of boxes shipped depending on the validation of `Product`, `Country`, and `Month`.
 - **Formula Purpose:** This formula calculates the sum of boxes shipped depending on validation. Also serves as one of the KPI.
 
 #### Background Table & KPI Implementation
